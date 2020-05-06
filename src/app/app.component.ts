@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lab5-angular-app';
+  parentColorProperty : string='';
+  receiveData($event){
+    this.parentColorProperty = $event;
+  }
 }
